@@ -2,7 +2,7 @@
 let n = require('./Name.js')({});
 
 let greeters = {};
-console.log('hi');
+
 let addGreeter = (name) => {
   n.Runtime.loadDynamicLibrary(name + '.js');
   greeters[name] = n.createGreeter(n.ccall('create' + name, 'number', []));
