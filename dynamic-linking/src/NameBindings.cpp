@@ -2,7 +2,6 @@
 #define host_bindings_h
 
 #include <emscripten/bind.h>
-#include <val.h>
 #include "Name.h"
 #include "Greeter.h"
 
