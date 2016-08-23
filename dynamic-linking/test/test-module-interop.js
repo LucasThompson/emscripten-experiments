@@ -6,7 +6,7 @@ let greeters = {};
 let addGreeter = (name) => {
   n.Runtime.loadDynamicLibrary(name + '.js');
   greeters[name] = n.createGreeter(n.ccall('create' + name, 'number', []));
-}
+};
 
 let dynamicLibraries = ['InitialedGreeter', 'FullNameGreeter'];
 
