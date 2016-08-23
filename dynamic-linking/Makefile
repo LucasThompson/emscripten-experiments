@@ -13,7 +13,6 @@ Name.js:
 InitialedGreeter.js:
 	em++ -std=c++11 -O3 \
 	./src/InitialedGreeter.cpp \
-	-s EXPORT_NAME="'InitialedGreeter'" \
 	-s SIDE_MODULE=1 \
 	-s EXPORTED_FUNCTIONS="['_createInitialedGreeter']" \
 	-o ./test/InitialedGreeter.js
@@ -21,7 +20,6 @@ InitialedGreeter.js:
 FullNameGreeter.js:
 	em++ -std=c++11 -O3 \
 	./src/FullNameGreeter.cpp \
-	-s EXPORT_NAME="'FullNameGreeter'" \
 	-s SIDE_MODULE=1 \
 	-s EXPORTED_FUNCTIONS="['_createFullNameGreeter']" \
 	-o ./test/FullNameGreeter.js
